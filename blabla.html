@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Snake Game</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="blabla.css" />
+    </head>
+    <body id="body">
+        <div class="fond">
+            <header class="backgound-black">
+                <h1>Jeu du serpent</h1>
+                <img src="snake.png" alt="Snake Game Logo" />
+            </header>
+
+            <nav class="backgound-black">
+                <ul>
+                    <li><a href="#history">Historique</a></li>
+                    <li><a href="#about">Concept</a></li>
+                    <li><a href="#how-to-play">Comment Jouer Au Serpent</a></li>
+                </ul>
+            </nav>
+
+            <section class="about backgound-black">
+                <h2 id="history">Historique</h2>
+                <p>
+                    Le concept de Snake vient du jeu d'arcade Blockade2,3,
+                    développé et édité par Gremlin Industries en 19764. La même
+                    année, un clone sort sous le nom de Bigfoot Bonkers. En
+                    1977, Atari Inc. publie deux jeux inspirés de Blockade : le
+                    jeu d'arcade Dominos et le jeu Surround sur Atari 26005.
+                    Surround faisait partie des neuf jeux au lancement de
+                    l'Atari 2600 aux États-Unis et était vendu par Sears sous le
+                    nom de Chase. La même année, un jeu semblable est édité pour
+                    l'Astrocade sous le nom de Checkmate6.
+                </p>
+                <br />
+                <h2 id="about">Concept</h2>
+                <p>
+                    Le joueur contrôle une longue et fine ligne semblable à un
+                    serpent, qui doit slalomer entre les bords de l'écran et les
+                    obstacles qui parsèment le niveau. Pour gagner chacun des
+                    niveaux, le joueur doit faire manger à son serpent un
+                    certain nombre de pastilles similaire à de la nourriture,
+                    allongeant à chaque fois la taille du serpent . Alors que le
+                    serpent avance inexorablement, le joueur ne peut que lui
+                    indiquer une direction à suivre (en haut, en bas, à gauche,
+                    à droite) afin d'éviter que la tête du serpent ne touche les
+                    murs ou son propre corps, auquel cas il risque de mourir.
+                    Certains clones proposent des niveaux de difficulté dans
+                    lesquels varient l'aspect du niveau (simple ou
+                    labyrinthique), le nombre de pastilles à manger,
+                    l'allongement du serpent ou encore sa vitesse.
+                </p>
+            </section>
+        </div>
+
+        <div class="content">
+            <section class="about backgound-black">
+                <div class="modal-overlay">
+                    <div class="modal">
+                        <h2>Partie terminée</h2>
+                        <p>score final : <span id="score">0</span></p>
+                        <div style="display: block">
+                            <button id="close-modal">Fermer</button>
+                            <button id="restart-modal">Rejouer</button>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="how-to-play">Comment Jouer Au Serpent</h2>
+                <p>
+                    Il n'y a que deux règles que vous devez suivre lorsque vous
+                    jouez : ne frappez pas un mur et ne vous mordez pas la
+                    queue. S'écraser contre un mur ou votre queue mettra fin au
+                    jeu immédiatement. Votre meilleur score est calculé en
+                    fonction du nombre de carrés que vous avez ajoutés au
+                    serpent. Vous gagnez la partie lorsqu'il n'y a plus de place
+                    pour que votre serpent grandisse.
+                </p>
+                <br />
+
+                <center>
+                    <h2>Score : <span id="score-visuel">0</span></h2>
+                    <canvas id="game" width="500" height="500"></canvas>
+                </center>
+            </section>
+        </div>
+        <footer>
+            <p>Créé par Pierrot Alexandre</p>
+            <ul>
+                <li>
+                    <a href="https://github.com/Ajproject-symfony/snake"
+                        >GitHub repo</a
+                    >
+                </li>
+            </ul>
+        </footer>
+        <script src="blabla.js"></script>
+    </body>
+</html>
